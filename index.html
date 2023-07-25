@@ -9,14 +9,13 @@
 </head>
 <body>
     <div id="container">
-        <textarea name="text" placeholder="Type your querie...."></textarea>
-        <button>Change text to voice</button>
+        <textarea name="text" placeholder="Type your querie...." id="box"></textarea>
+        <button id="btn">Change text to voice</button>
     </div>
-
     <!-- ............java script.............. -->
     <script>
-        let text = document.querySelector('textarea');
-        let button = document.querySelector('textarea');
+        let text = document.getElementById('box');
+        let button = document.getElementById('btn');
          button.addEventListener(('click'),()=>{
             let talk = new
             SpeechSynthesisUtterance(text.value)
